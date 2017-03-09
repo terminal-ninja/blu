@@ -1,0 +1,226 @@
+.home
+  i
+    &.dot
+      opacity: 0
+      left: 50px
+      +vp('transition','all 1s ease')
+      +vp('transition-delay','1.4s')
+
+  h1
+    opacity: 0
+    +vp('transition','all 0.7s ease')
+    +vp('transition-delay','0.7s')
+
+  h5
+    opacity: 0
+    +vp('transition','all 0.7s ease')
+    +vp('transition-delay','1.1s')
+
+  .contact
+    i
+      &.dot
+        opacity: 1
+        left: 0px
+
+    h1
+      opacity: 1
+
+    h5
+      opacity: 1
+
+  .cocreate
+    .splash
+      .outer
+        opacity: 0
+        +vp('transform','rotate(180deg)')
+        +vp('transition','all 1s ease')
+      .mid
+        opacity: 0
+        +vp('transition','all 1s ease')
+      .inner
+        opacity: 0
+        +vp('transition','all 1s ease')
+      .contentdots
+        opacity: 0
+        +vp('transform','scale(0.7)')
+        +vp('transition','all 1s ease')
+
+  .glance
+    .line
+      .theline
+        opacity: 0
+        +vp('transition','all 1s ease')      
+        +vp('transition-delay','3s')
+    .icon
+      opacity: 0
+      margin-right: -20px
+      +vp('transition','all 1s ease')
+    .text
+      opacity: 0
+      margin-left: -20px
+      +vp('transition','all 1s ease')      
+    .item
+      &:nth-child(2)
+        .icon, .text
+          +vp('transition-delay','1s')
+      &:nth-child(3)
+        .icon, .text
+          +vp('transition-delay','1.2s')
+      &:nth-child(4)
+        .icon, .text
+          +vp('transition-delay','1.4s')
+      &:nth-child(5)
+        .icon, .text
+          +vp('transition-delay','1.6s')
+      &:nth-child(6)
+        .icon, .text
+          +vp('transition-delay','1.8s')
+          
+  .workforce
+    .line
+      .theline
+        height: 0% 
+        +vp('transition','all 1.2s ease')
+        +vp('transition-delay','1.5s')
+
+  .connect
+    .line
+      .theline
+        height: 0% 
+        +vp('transition','all 1.2s ease')
+        +vp('transition-delay','1.5s')
+
+/* WHEN SLIDE COMES INTO VIEW */
+.home
+  .hero
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .workforce
+    &.active
+      h1
+        opacity: 1 
+      h5
+        opacity: 1         
+      .line
+        .theline
+          height: 100% 
+
+  .journey
+    &.active     
+      h1
+        opacity: 1 
+      h5
+        opacity: 1           
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .technology
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .glance
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+      .icon
+        opacity: 1  
+        margin-right: 0px
+      .line
+        .theline
+          opacity: 1     
+      .text
+        margin-left: 0px
+        opacity: 1            
+
+  .industries
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .business
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .cocreate
+    &.active
+      h1
+        opacity: 1 
+      .outer
+        opacity: 1
+        +vp('transform','rotate(0deg)')
+        +vp('transition-delay','1s')
+      .mid
+        opacity: 1 
+        +vp('transition-delay','2s')
+      .inner
+        opacity: 1 
+        +vp('transition-delay','3s')
+      .contentdots
+        opacity: 1 
+        +vp('transform','scale(1)')
+        +vp('transition-delay','3s')
+
+  .footprint
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .solutions
+    &.active
+      h1
+        opacity: 1 
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 
+
+  .connect
+    &.active
+      h1
+        opacity: 1 
+      h5
+        opacity: 1        
+      .line
+        .theline
+          height: 100% 
+
+  .contact
+    &.active
+      h1
+        opacity: 1 
+      h5
+        opacity: 1            
+      i
+        &.dot
+          opacity: 1 
+          left: 0px 

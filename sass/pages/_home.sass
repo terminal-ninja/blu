@@ -1,0 +1,506 @@
+.home
+	.arrow-bottom-white
+		background: url(images/icons/arrow-bottom-white@2x.png)
+		background: url(images/icons/arrow-bottom-white.svg)
+		background-size: 22px 18px
+		+vp('linear-gradient','(transparent, transparent)')
+		background-repeat: no-repeat
+		position: absolute
+		bottom: 40px
+		left: 50%
+		width: 22px
+		height: 18px
+		margin-left: -12px
+		@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+			background-image: url(images/icons/arrow-bottom-white@2x.png)
+			background-image: url(images/icons/arrow-bottom-white.svg)
+			background-repeat: no-repeat
+			background-size: 22px 18px 
+	.arrow-bottom-blue
+		background: url(images/icons/arrow-bottom-blue@2x.png)
+		background: url(images/icons/arrow-bottom-blue.svg)
+		background-size: 22px 18px
+		+vp('linear-gradient','(transparent, transparent)')
+		background-repeat: no-repeat
+		position: absolute
+		bottom: 40px
+		left: 50%
+		width: 22px
+		height: 18px
+		margin-left: -12px
+		@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+			background-image: url(images/icons/arrow-bottom-blue@2x.png)
+			background-image: url(images/icons/arrow-bottom-blue.svg)
+			background-repeat: no-repeat
+			background-size: 22px 18px 
+
+	.bg
+		background-position: center
+		background-repeat: no-repeat
+		background-size: cover		
+		position: absolute
+		top: 0
+		left: 0
+		z-index: -1
+		width: 100%
+		height: 100%
+
+	.markdevice
+		position: absolute
+		top: 50%
+		left: 0px
+		.item
+			padding: 10px 0px 10px 100px
+			position: relative
+			text-transform: uppercase
+			float: none
+			clear: both
+			font-size: 0.7em
+			height: 30px
+			+clearfix
+			@media screen and (max-width: 1480px)
+				padding-left: 70px
+			&:before
+				content: ''
+				position: absolute
+				left: 0px
+				top: 15px
+				width: 90px
+				height: 2px
+				@media screen and (max-width: 1480px)
+					width: 60px
+			&.white
+				&:before
+					background: $whitest
+			&.blue
+				&:before
+					background: $prime-color1
+			&.black
+				&:before
+					background: $text-dark
+
+	.line
+		.theline
+			width: 2px
+			height: 100%
+			margin: 0px auto	
+		&.down
+			height: 30vh
+			@media screen and (max-width: 1480px)
+				height: 16vh
+		&.black
+			.theline
+				background: $text-dark
+		&.white
+			.theline
+				background: $whitest
+		&.blue
+			.theline
+				background: $prime-color1				
+
+	/* 1 - HERO */
+	.hero
+		.bg
+			background-image: url('images/sectionhero/hero.jpg')
+	/* 2 - Workforce */
+	.workforce
+		h2
+			margin-top: 1em
+
+	/* 3 - Journey */
+	.journey
+		.bg
+			background-image: url('images/sectionhero/journey.jpg')
+		h2
+			padding-top: 60px
+
+	/* 4 - Technology */
+	.technology
+		.bg
+			background-image: url('images/sectionhero/technology.jpg')		
+	/* 5 - Glance */
+	.glance
+		padding: 0px !important
+		.half
+			height: 100vh
+			position: relative
+			padding-top: 11%			
+			.bg
+				background-image: url('images/sectionhero/glance.jpg')
+			.item
+				float: right
+				clear: both
+				padding-bottom: 6%
+				+clearfix
+				&:last-child
+					p
+						span
+							font-size: 0.7em
+				.text
+					float: left
+					background: $prime-color1
+					padding: 10px 19px 10px 22px
+					margin-right: 30px
+					margin-top: 10px
+					+vp('border-radius','20px')
+					&.large
+						margin-top: 12px
+					p
+						font-size: 0.9em
+						padding: 0px
+						margin: 0px
+						color: $whitest
+						text-align: right
+						line-height: 15px
+						span
+							color: $text-dark
+							&.white
+								color: $whitest
+								font-size: 0.9em
+				.icon
+					float: left
+					figure
+						width: 60px
+						height: 60px
+						background: $whitest
+			&.achievements
+				padding-right: 10%
+				position: relative
+				.line
+					position: relative
+					top: 0px
+					right: 0px
+					.theline
+						position: absolute
+						margin-top: 18%
+						right: 28px
+						width: 3px
+						height: 240px
+						border: 2px dashed $prime-color1
+						z-index: -1
+
+
+	/* 6 - Industries */
+	.industries
+		.slick-active
+			// &:nth-child(7n+1)
+			// 	padding-top: 140px
+			// &:nth-child(7n+2)
+			// 	padding-top: 80px
+			// &:nth-child(7n+3)
+			// 	padding-top: 30px
+			// &:nth-child(7n+4)
+			// 	padding-top: 30px
+			// &:nth-child(7n+5)
+			// 	padding-top: 30px
+			// &:nth-child(7n+6)
+			// 	padding-top: 80px
+			// &:nth-child(7n+7)
+			// 	padding-top: 140px
+
+			// &:nth-child(7n+6)
+			// 	padding-top: 140px
+			// &:nth-child(7n+7)
+			// 	padding-top: 80px
+			// &:nth-child(7n+8)
+			// 	padding-top: 30px
+			// &:nth-child(7n+9)
+			// 	padding-top: 30px
+			// &:nth-child(7n+10)
+			// 	padding-top: 30px
+			// &:nth-child(7n+11)
+			// 	padding-top: 80px
+			// &:nth-child(7n+12)
+			// 	padding-top: 140px
+
+		.slick-track
+			height: 260px
+		.slick-slide
+			padding-top: 40px
+			position: relative
+			+vp('transform','scale(0.7)')
+			+vp('transition','all 0.8s ease')
+			.icon
+				width: 100%
+				text-align: center
+				// &.top-padded-small
+				// 	padding-top: 80px
+				// &.top-padded-large
+				// 	padding-top: 120px									
+			figure
+				float: none
+				margin: 0px auto
+				height: 180px
+				img
+					height: 100%
+
+		.slick-center
+			+vp('transform','scale(1.3)')
+			// +vp('transition','all 1s ease')
+			figure
+				float: none
+				margin: 0px auto
+				height: 180px
+				img
+					height: 180px
+
+		// .slick-center + .slick-slide > .icon			
+		// 	padding-top: 40px
+		// .slick-center + .slick-slide + .slick-slide > .icon				
+		// 	padding-top: 80px
+		// .slick-center + .slick-slide + .slick-slide + .slick-slide > .icon	
+		// 	padding-top: 120px
+		// .slick-center + .slick-slide + .slick-slide + .slick-slide + .slick-slide > .icon	
+		// 	padding-top: 120px
+
+		.slick-prev
+			top: 280px
+			left: 42%
+			background-image: url(images/icons/arrow-bottom-white@4x.png)
+			background-image: url(images/icons/arrow-bottom-white.svg)
+			background-size: 22px 16px
+			+vp('linear-gradient','(transparent, transparent)')
+			+vp('transform','rotate(90deg)')
+			background-repeat: no-repeat
+			width: 22px
+			height: 16px
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+				background-image: url(images/icons/arrow-bottom-white@2x.png)
+				background-image: url(images/icons/arrow-bottom-whitesvg)
+				background-repeat: no-repeat
+				background-size: 22px 16px 
+		.slick-next
+			right: 42%
+			top: 280px
+			background-image: url(images/icons/arrow-bottom-white@4x.png)
+			background-image: url(images/icons/arrow-bottom-white.svg)
+			background-size: 22px 16px
+			+vp('linear-gradient','(transparent, transparent)')
+			+vp('transform','rotate(-90deg)')
+			background-repeat: no-repeat
+			width: 22px
+			height: 16px
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+				background-image: url(images/icons/arrow-bottom-white@2x.png)
+				background-image: url(images/icons/arrow-bottom-whitesvg)
+				background-repeat: no-repeat
+				background-size: 22px 16px 
+
+	/* 7 - Business */
+	.business	
+		.bg
+			background-image: url('images/sectionhero/business.jpg')
+		h1
+			padding-top: 20%
+
+	/* 8 - CoCreate */
+	.cocreate
+		h1
+			margin-top: -70px
+		h4
+			padding-top: 30px
+		.splash
+			position: relative
+			width: 573px
+			height: 580px
+			margin: -210px auto 0px auto
+			.outer
+				position: absolute
+				top: 0px
+				left: 0px
+				z-index: 1
+				background: url(images/large-assets/create-outer-circle@2x.png)
+				background: url(images/large-assets/create-outer-circle.svg)
+				background-size: 573px 634px
+				+vp('linear-gradient','(transparent, transparent)')
+				background-repeat: no-repeat
+				width: 573px
+				height: 634px		
+				@media screen and (max-width: 1480px)
+				@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+					background-image: url(images/large-assets/create-outer-circle@2x.png)
+					background-image: url(images/large-assets/create-outer-circle.svg)
+					background-repeat: no-repeat
+					background-size: 573px 634px 					
+			.mid
+				position: absolute
+				top: 100px
+				left: 30px
+				z-index: 2			
+				background: url(images/large-assets/create-inner-circle@2x.png)
+				background: url(images/large-assets/create-inner-circle.svg)
+				background-size: 497px 401px
+				+vp('linear-gradient','(transparent, transparent)')
+				background-repeat: no-repeat
+				width: 497px
+				height: 401px			
+				@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+					background-image: url(images/large-assets/create-inner-circle@2x.png)
+					background-image: url(images/large-assets/create-inner-circle.svg)
+					background-repeat: no-repeat
+					background-size: 497px 401px 						
+
+			.inner
+				position: absolute
+				top: 120px
+				left: 50%
+				margin-left: -185px
+				z-index: 3
+				background: url(images/large-assets/create-building@2x.png)
+				background: url(images/large-assets/create-building.svg)
+				background-size: 370px 398px
+				+vp('linear-gradient','(transparent, transparent)')
+				background-repeat: no-repeat
+				width: 370px
+				height: 398px				
+				@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+					background-image: url(images/large-assets/create-building@2x.png)
+					background-image: url(images/large-assets/create-building.svg)
+					background-repeat: no-repeat
+					background-size: 370px 398px 		
+
+			.contentdots							
+				position: absolute
+				top: 80px
+				left: 30px
+				z-index: 3
+				background: url(images/large-assets/contentdots@2x.png)
+				background: url(images/large-assets/contentdots.svg)
+				background-size: 521px 473px 
+				+vp('linear-gradient','(transparent, transparent)')
+				background-repeat: no-repeat
+				width: 521px
+				height: 473px				
+				@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+					background-image: url(images/large-assets/contentdots@2x.png)
+					background-image: url(images/large-assets/contentdots.svg)
+					background-repeat: no-repeat
+					background-size: 521px 473px 		
+	/* 9 - Footprint */
+	.footprint
+		figure
+			max-height: 60vh
+		.slick-slide
+			position: relative
+		.overlay
+			position: absolute
+			width: 80%
+			left: 50%
+			top: 50%
+			margin-left: -40%
+			z-index: 1
+			h1
+				position: relative
+				&:after
+					content: ''
+					position: absolute
+					left: 50%
+					top: 110%
+					margin-left: -10px
+					width: 20px
+					height: 20px
+					background: $prime-color1
+					border: 2px solid $whitest
+					+vp('border-radius','50%')
+		.slick-prev
+			left: 70px
+			background-image: url(images/icons/arrow-bottom-white@4x.png)
+			background-image: url(images/icons/arrow-bottom-white.svg)
+			background-size: 40px 28px
+			+vp('linear-gradient','(transparent, transparent)')
+			+vp('transform','rotate(90deg)')
+			background-repeat: no-repeat
+			width: 40px
+			height: 28px
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+				background-image: url(images/icons/arrow-bottom-white@2x.png)
+				background-image: url(images/icons/arrow-bottom-whitesvg)
+				background-repeat: no-repeat
+				background-size: 40px 28px 
+		.slick-next
+			right: 70px
+			background-image: url(images/icons/arrow-bottom-white@4x.png)
+			background-image: url(images/icons/arrow-bottom-white.svg)
+			background-size: 40px 28px
+			+vp('linear-gradient','(transparent, transparent)')
+			+vp('transform','rotate(-90deg)')
+			background-repeat: no-repeat
+			width: 40px
+			height: 28px
+			@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+				background-image: url(images/icons/arrow-bottom-white@2x.png)
+				background-image: url(images/icons/arrow-bottom-whitesvg)
+				background-repeat: no-repeat
+				background-size: 40px 28px 
+		.slider-footprint-navigation
+			padding: 30px 0px 30px 20px
+			background: $prime-color1
+			+clearfix
+			.inner
+				float: right
+				+clearfix
+				div
+					color: $whitest
+					text-decoration: underline
+					text-transform: uppercase   					
+
+	/* 10 - Solutions */
+	.solutions
+		.bg
+			background-image: url('images/sectionhero/solutions.jpg')
+
+	/* 11 - Connect */
+	.connect
+		.bg
+			background-image: url('images/sectionhero/connect.jpg')
+
+	/* 11 - Contact */
+	.contact
+		padding-bottom: 70px !important
+		.half
+			margin-top: 30px
+			padding: 30px
+			position: relative
+			.button
+				margin-top: 10px	
+			.icon
+				background-size: 11px 26px
+				+vp('linear-gradient','(transparent, transparent)')
+				background-repeat: no-repeat
+				position: absolute
+				top: 30px
+			h4
+				margin-top: 0em
+			&:nth-child(4)
+				border: 2px solid $whitest
+				+vp('border-radius','25px 0px 0px 0px')
+				.icon
+					background: url(images/icons/phone@2x.png)
+					background: url(images/icons/phone.svg)	
+					width: 16px
+					height: 37px					
+					right: 30px
+					@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+						background-image: url(images/icons/phone@2x.png)
+						background-image: url(images/icons/phone.svg)
+						background-repeat: no-repeat
+						background-size: 16px 37px 												
+			&:nth-child(5)
+				border-top: 2px solid $whitest
+				border-right: 2px solid $whitest
+				border-bottom: 2px solid $whitest
+				+vp('border-radius','0px 25px 0px 0px')			
+				.icon
+					background: url(images/icons/email@2x.png)
+					background: url(images/icons/email.svg)	
+					width: 29px
+					height: 37px
+					left: 30px
+					@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2/1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx)
+						background-image: url(images/icons/email@2x.png)
+						background-image: url(images/icons/email.svg)
+						background-repeat: no-repeat
+						background-size: 29px 37px 				
+				.button
+					float: right
+

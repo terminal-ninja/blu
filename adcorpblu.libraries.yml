@@ -1,0 +1,22 @@
+global-styling:
+  version: VERSION
+  css:
+    theme:
+      style.css: {}
+
+fonts:
+  css:
+    theme:
+      fonts/proxima-nova: {}
+
+global-scripts:
+  version: VERSION
+  js:
+    js/jquery-2.2.0.min.js: {}
+    js/jquery.slimmenu.js: {}
+    js/slick.min.js: {}
+    js/smoothscroll.js: {}
+    js/scrollreveal.min.js: {}
+    js/jquery.fullPage.min.js: {}
+    js/jquery.fullpage.extensions.min.js: {}
+    js/scripts.js: {}
